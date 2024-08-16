@@ -3,12 +3,8 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
+ * copyright 2022 codewithmoha
  */
-
-
-
-
 
 /*-----------------------------------*\
  * #CUSTOM PROPERTY
@@ -19,7 +15,6 @@
   /**
    * colors
    */
-
   --raw-seinna: hsl(24, 74%, 58%);
   --sizzling-sunrise: hsl(51, 95%, 54%);
   --scarlet: hsl(13, 96%, 47%);
@@ -29,11 +24,9 @@
   /**
    * typography
    */
-
   --ff-saira-stencil-one: "Saira Stencil One", sans-serif;
   --ff-poppins: 'Poppins', sans-serif;
   --ff-roboto: 'Roboto', sans-serif;
-
   --fs-1: 2rem;
   --fs-2: calc(1.813rem + 1vw);
   --fs-3: calc(1.313rem + 1vw);
@@ -41,68 +34,49 @@
   --fs-5: 1rem;
   --fs-6: 0.813rem;
   --fs-7: 0.75rem;
-
   --fw-400: 400;
   --fw-700: 700;
 
   /**
    * transition
    */
-
   --transition-1: 0.25s ease-in-out;
 
   /**
    * spacing
    */
-
   --section-padding: 80px;
 
   /**
    * radius
    */
-
   --radius-4: 4px;
   --radius-12: 12px;
-
 }
-
-
-
-
 
 /*-----------------------------------*\
  * #THEME COLORS
 \*-----------------------------------*/
 
 body.dark_theme {
-
   --bg-primary: hsl(0, 0%, 12%);
   --bg-secondary: hsl(0, 0%, 19%);
   --color-primary: hsl(0, 0%, 100%);
   --color-secondary: hsl(0, 0%, 62%);
   --card-shadow: hsla(0, 0%, 0%, 0.4);
   --input-bg: hsl(0, 0%, 16%);
-
   --shadow-1: 10px 10px 40px var(--card-shadow);
-
 }
 
 body.light_theme {
-
   --bg-primary: hsl(0, 0%, 90%);
   --bg-secondary: hsl(0, 0%, 100%);
   --color-primary: hsl(0, 0%, 12%);
   --color-secondary: hsl(0, 0%, 37%);
   --card-shadow: hsla(0, 0%, 0%, 0.1);
   --input-bg: hsl(0, 0%, 93%);
-
   --shadow-1: 10px 10px 40px var(--card-shadow);
-
 }
-
-
-
-
 
 /*-----------------------------------*\
  * #RESET
@@ -183,10 +157,6 @@ body {
 body.active {
   overflow: hidden;
 }
-
-
-
-
 
 /*-----------------------------------*\
  * #REUSED STYLE
@@ -284,9 +254,10 @@ body.active {
   color: var(--color-secondary);
   line-height: 1.8;
   margin-bottom: 15px;
+  text-align: justify;
 }
 
-.section-text-last{
+.section-text-last {
   margin-bottom: 30px;
 }
 
@@ -307,10 +278,6 @@ body.active {
   transition: var(--transition-1);
   z-index: 1;
 }
-
-
-
-
 
 /*-----------------------------------*\
  * #HEADER
@@ -500,10 +467,6 @@ body.active {
   width: 100%;
 }
 
-
-
-
-
 /*-----------------------------------*\
  * #HERO
 \*-----------------------------------*/
@@ -568,10 +531,6 @@ main {
 .about .btn-secondary {
   margin-bottom: 10px;
 }
-
-
-
-
 
 /*-----------------------------------*\
  * #SKILLS
@@ -651,7 +610,6 @@ main {
   100% {
     opacity: 1;
   }
-
 }
 
 .skill-card {
@@ -670,10 +628,6 @@ main {
   transform: translateY(0);
   opacity: 1;
 }
-
-
-
-
 
 /*-----------------------------------*\
  * #PROJECT
@@ -750,10 +704,6 @@ main {
   text-decoration: underline;
   margin-inline: auto;
 }
-
-
-
-
 
 /*-----------------------------------*\
  * #CONTACT
@@ -892,10 +842,6 @@ textarea.input-field {
   color: var(--bg-primary);
 }
 
-
-
-
-
 /*-----------------------------------*\
  * #FOOTER
 \*-----------------------------------*/
@@ -920,10 +866,6 @@ textarea.input-field {
   display: inline-block;
   color: var(--raw-seinna);
 }
-
-
-
-
 
 /*-----------------------------------*\
  * #GO TO TOP
@@ -954,10 +896,6 @@ textarea.input-field {
   transform: translateY(0);
 }
 
-
-
-
-
 /*-----------------------------------*\
  * #MEDIA QUERIES
 \*-----------------------------------*/
@@ -965,13 +903,11 @@ textarea.input-field {
 /**
  * responsive for larger than 550px screen
  */
-
 @media (min-width: 550px) {
 
   /**
    * REUSED STYLE
    */
-
   .container {
     max-width: 550px;
     margin-inline: auto;
@@ -981,12 +917,9 @@ textarea.input-field {
     max-width: 380px;
   }
 
-
-
   /**
    * PROJECT
    */
-
   .project-list {
     column-count: 2;
     column-gap: 25px;
@@ -995,23 +928,16 @@ textarea.input-field {
   .project-list>li:first-child {
     column-span: all;
   }
-
 }
-
-
-
-
 
 /**
  * responsive for larger than 768px screen
  */
-
 @media (min-width: 768px) {
 
   /**
    * REUSED STYLE
    */
-
   .container {
     max-width: 720px;
   }
@@ -1020,22 +946,16 @@ textarea.input-field {
     max-width: 430px;
   }
 
-
-
   /**
    * STATS
    */
-
   .stats-list {
     grid-template-columns: 1fr 1fr;
   }
 
-
-
   /**
    * ABOUT
    */
-
   .btn-group {
     display: flex;
     justify-content: flex-start;
@@ -1051,50 +971,35 @@ textarea.input-field {
     margin-bottom: 0;
   }
 
-
-
   /**
    * CONTACT
    */
-
   .contact-form {
     max-width: 450px;
     margin-inline: auto;
   }
-
 }
-
-
-
-
 
 /**
  * responsive for larger than 992px screen
  */
-
 @media (min-width: 992px) {
 
   /**
    * CUSTOM PROPERTY
    */
-
   :root {
 
     /**
      * typography
      */
-
     --fs-2: 3rem;
 
     /**
      * spacing
      */
-
     --section-padding: 100px;
-
   }
-
-
 
   /**
    * REUSED STYLE
@@ -1123,8 +1028,6 @@ textarea.input-field {
     left: auto;
     right: calc(100% + 20px);
   }
-
-
 
   /**
    * HEADER
@@ -1174,12 +1077,9 @@ textarea.input-field {
     height: 2px;
   }
 
-
-
   /**
    * HERO
    */
-
   .hero {
     position: relative;
     padding-top: 0;
@@ -1275,12 +1175,9 @@ textarea.input-field {
     background: var(--color-secondary);
   }
 
-
-
   /**
    * STATS
    */
-
   .stats-list {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1289,13 +1186,9 @@ textarea.input-field {
     height: 100%;
   }
 
-
-
-
   /**
    * ABOUT
    */
-
   .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1307,13 +1200,9 @@ textarea.input-field {
     margin-bottom: 0;
   }
 
-
-
-
   /**
    * SKILLS
    */
-
   .skills {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1329,12 +1218,9 @@ textarea.input-field {
     margin-inline: 0;
   }
 
-
-
   /**
    * PROJECT
    */
-
   .project-list {
     column-count: 3;
   }
@@ -1345,12 +1231,9 @@ textarea.input-field {
     margin-left: 0;
   }
 
-
-
   /**
    * CONTACT
    */
-
   .contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1369,12 +1252,9 @@ textarea.input-field {
     margin-left: -40px;
   }
 
-
-
   /**
    * FOOTER
    */
-
   .footer .container {
     display: flex;
     justify-content: space-between;
@@ -1384,23 +1264,16 @@ textarea.input-field {
   .footer .logo {
     margin-bottom: 0;
   }
-
 }
-
-
-
-
 
 /**
  * responsive for larger than 1200px screen
  */
-
 @media (min-width: 1200px) {
 
   /**
    * REUSED STYLE
    */
-
   .container {
     max-width: 1150px;
   }
@@ -1409,13 +1282,9 @@ textarea.input-field {
     max-width: 460px;
   }
 
-
-
-
   /**
    * HERO
    */
-
   .hero-social-list {
     left: -80px;
   }
@@ -1424,9 +1293,6 @@ textarea.input-field {
     right: -80px;
   }
 
-
-
-
   /**
    * ABOUT
    */
@@ -1434,5 +1300,4 @@ textarea.input-field {
   .about-banner {
     max-width: 450px;
   }
-
 }
